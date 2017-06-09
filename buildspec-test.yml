@@ -9,7 +9,7 @@ phases:
       - npm install newman --global
   build:
     commands:
-      - newman run -e env.json -r cli src/test/postman/collection.json
+      - newman run -e env.json -r html,cli src/test/postman/collection.json
 
 artifacts:
   files:
