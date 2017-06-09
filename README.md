@@ -30,7 +30,7 @@ Finally, push the changes to trigger a pipeline invocation:
 
 ```
 git add --all
-git commit -m "mu init"
+git commit -m "mu testing"
 git push
 ```
 
