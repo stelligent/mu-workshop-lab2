@@ -39,8 +39,9 @@ git push
 While we wait for the pipeline to run, let's explore what mu created:
 
 * **CodePipeline console** - Open the AWS console and navigate to CodePipeline.  Check out the different stages and actions in the pipeline.
-    * Which CodeBuild project is creating the `env.json` file tha is used by Newman to determine the hostname of the ELB?
+    * Which CodeBuild project is creating the `env.json` file that is used by Newman to determine the hostname of the ELB?
     * How does it generate the `env.json` file?
+    * Generate the `env.json` file locally via `mu` and try running newman locally.
     * How does CodeBuild know to use the `buildspec-test.yml` file?
     * How did it work in Lab 1, before the file existed?
 
