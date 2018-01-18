@@ -16,7 +16,7 @@ Since **Newman** requires Node.js, use the [Pipelines](https://github.com/stelli
 Create a [buildspec-test.yml](http://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-syntax) to test the service.  The buildspec should have the following configurations:
 
 * Run the command `npm install newman --global` in the **install** phase
-* Run the command `newman run -e env.json -r html,cli src/test/postman/collection.json` in the **build** phase
+* Run the command `newman run src/test/postman/collection.json -e env.json -r html,cli` in the **build** phase
 * Use the path `newman/*` for **files** in the **artifacts** section
 
 #  Pipeline
